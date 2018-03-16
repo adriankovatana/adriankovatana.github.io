@@ -20,6 +20,8 @@
 	<link href="assets/css/style.css" rel="stylesheet" />
 	<!-- GOOGLE FONT -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+  <!-- IMAGE ZOOM MODAL CSS -->
+  <link href="assets/css/modal-image.css" rel="stylesheet" />
 	
 </head>
 <body>
@@ -81,11 +83,9 @@
 							</a>
 						</h4>
 						<p>A Java game using the Libgdx library</p>
-						<a href="https://github.com/adriank1/Get_outta_my_LAIR" target="_blank">
-							<img src="assets/img/sdd_titlescreen.png" alt="" class="img-responsive" /><br />
-							<img src="assets/img/sdd2.png" alt="" class="img-responsive" /><br />
-							<img src="assets/img/sdd.png" alt="" class="img-responsive" />
-						</a>
+						<img id="#projectImage" src="assets/img/sdd_titlescreen.png" alt="Get Outta My Lair! - title screen" class="img-responsive" onclick="showImageModal(this)" /><br />
+						<img id="#projectImage" src="assets/img/sdd2.png" alt="Get Outta My Lair! - Bernard the Beholder using his basic laser on an enemy" class="img-responsive" onclick="showImageModal(this)" /><br />
+						<img id="#projectImage" src="assets/img/sdd.png" alt="Get Outta My Lair! - Bernard the Beholder moving through a level" class="img-responsive" onclick="showImageModal(this)" />
 					</div>
 					</div>
 				</div>
@@ -99,9 +99,7 @@
 							</a>
 						</h4>
 						<p>An Android arcade/strategy game</p>
-						<a href="https://github.com/adriank1/Siege_Defense" target="_blank">
-							<img src="assets/img/siege.png" alt="" class="img-responsive" />
-						</a>
+						<img id="#projectImage" src="assets/img/siege.png" alt="Siege Defense - siege units attacking the enemy wall" class="img-responsive" onclick="showImageModal(this)" />
 					</div>
 					</div>
 				</div>
@@ -115,11 +113,9 @@
 							</a>
 						</h4>
 						<p>An Android zombie survival arcade game</p>
-						<a href="https://github.com/adriank1/One_Life_To_Survive" target="_blank">
-							<img src="assets/img/olts_title.png" alt="" class="img-responsive" /><br />
-							<img src="assets/img/olts.png" alt="" class="img-responsive" /><br />
-							<img src="assets/img/olts_gameover.png" alt="" class="img-responsive" />
-						</a>
+						<img id="#projectImage" src="assets/img/olts_title.png" alt="One Life to Survive - title screen" class="img-responsive" onclick="showImageModal(this)" /><br />
+						<img id="#projectImage" src="assets/img/olts.png" alt="One Life to Survive - survivor defending against a hoard of approaching zombies" class="img-responsive" onclick="showImageModal(this)" /><br />
+						<img id="#projectImage" src="assets/img/olts_gameover.png" alt="One Life to Survive - game over screen showing score, time played, kills, and shooting accuracy" class="img-responsive" onclick="showImageModal(this)" />
 					</div>
 					</div>
 				</div>
@@ -130,8 +126,14 @@
 	
 	<!--END HOME PAGE SECTION-->
 
+  <!-- IMAGE ZOOM MODAL SECTION -->
+  <div id="modalForImageZoom" class="imageModal">
+    <img id="imageModal" class="imageModalContent">
+    <div id="imageModalCaption"></div>
+  </div>
 
 	<!--FOOTER SECTION -->
+  <br/><br/><br/>
 	<div id="footer">
 		2018 adriank1.github.io
 	</div>
@@ -142,5 +144,7 @@
 	<script src="assets/js/jquery-3.1.0.js"></script>
 	<!-- BOOTSTRAP CORE SCRIPT   -->
 	<script src="assets/js/bootstrap.js"></script>
+  <!-- IMAGE ZOOM MODAL -->
+  <script src="assets/js/modal-image.js"></script>
 </body>
 </html>
