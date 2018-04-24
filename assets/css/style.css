@@ -208,6 +208,10 @@ border: 1px solid #e1e1e1;
     text-align:right;
 }
 
+.rights {
+  float: right;
+}
+
 
 /*=======================================
     MEDIA QUERIES
@@ -224,3 +228,46 @@ border: 1px solid #e1e1e1;
         font-size:35px ;
     }
 }
+
+
+/*=======================================
+    SOCIAL MEDIA
+    
+    ==================================================*/
+.fa {
+  padding-top: 6px;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  float: left;
+}
+
+.fa:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fa:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: inherit;
+}
+
+.fa:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
