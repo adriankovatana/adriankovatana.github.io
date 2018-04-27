@@ -267,7 +267,9 @@ border: 1px solid #e1e1e1;
 }
 
 .fa-linkedin {
-  background: #007bb5;
-  color: white;
+  background: #0077b5;
 }
 
+.fa-github {
+  background: #333;
+}
