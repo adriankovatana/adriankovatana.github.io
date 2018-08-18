@@ -235,14 +235,9 @@ border: 1px solid #e1e1e1;
     
     ==================================================*/
 .fa {
-  padding-top: 6px;
   font-size: 18px;
-  width: 30px;
-  height: 30px;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
-  float: left;
 }
 
 .fa:link {
@@ -266,10 +261,10 @@ border: 1px solid #e1e1e1;
   color: inherit;
 }
 
-.fa-linkedin {
+/*.fa-linkedin {
   background: #0077b5;
 }
 
 .fa-github {
   background: #333;
-}
+}*/
