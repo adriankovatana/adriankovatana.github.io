@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta name="description" content="Webpage to show the collection of my projects and skills" />
-  <meta name="author" content="Adrian Kovatana" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="Webpage to show the collection of my projects and skills" />
+	<meta name="author" content="Adrian Kovatana" />
 
-  <title>Porfolio - Adrian Kovatana</title>
+	<title>Porfolio - Adrian Kovatana</title>
 
   <!-- Open Graph -->
   <meta property="og:image" content="assets/img/drunk_painting.jpg">
@@ -22,7 +21,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
@@ -31,95 +30,168 @@
   <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- CUSTOM STYLE CSS -->
-  <link href="assets/css/style.css" rel="stylesheet" />
+	<!--REQUIRED STYLE SHEETS-->
+
+	<!-- BOOTSTRAP CORE STYLE CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet" />
+	<!-- FONTAWESOME STYLE CSS -->
+	<!-- <link href="assets/css/font-awesome.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--ANIMATED FONTAWESOME STYLE CSS -->
+	<link href="assets/css/font-awesome-animation.css" rel="stylesheet" />
+	<!-- CUSTOM STYLE CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" />
+	<!-- GOOGLE FONT -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+  <!-- IMAGE ZOOM MODAL CSS -->
+  <link href="assets/css/modal-image.css" rel="stylesheet" />
 
 </head>
-
 <body>
-  <!-- NAV SECTION -->
-  <nav>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/adriankovatana" target="_blank">LinkedIn</a></li>
-      <li><a href="https://github.com/adriankovatana" target="_blank">GitHub</a></li>
-      <li><a href="https://twitter.com/AdrianKovatana" target="_blank">Twitter</a></li>
-      <li><a href="https://www.youtube.com/channel/UCpMxJImZUFRbNxYgtiXki1g" target="_blank">YouTube</a></li>
-    </ul>
+	<!-- NAV SECTION -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
 
-  </nav>
-  <!--END NAV SECTION -->
-  <section>
-    <h1>Games Created</h1>
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<span class="navbar-brand" href="index.html">ADRIAN KOVATANA</span>
+			</div>
 
-    <h4><a href="https://kovakomes.itch.io/sacrifice-to-the-flames" target="_blank">Sacrifice to the
-        Flames</a></h4>
-    <p>Multiplatform arcade game created during a 72-hour <a href="https://ldjam.com/events/ludum-dare/43"
-        target="_blank">game jam</a>. Made with <a href="https://unity3d.com/" target="_blank">Unity</a>.</p>
-    <iframe frameborder="0" src="https://itch.io/embed/339546" width="90%" height="167"></iframe>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="https://www.linkedin.com/in/adriankovatana" class="fa fa-linkedin" target="_blank"></a></li>
+					<li><a href="https://github.com/adriankovatana" class="fa fa-github" target="_blank"></a></li>
+          <li><a href="https://twitter.com/AdrianKovatana" class="fa fa-twitter" target="_blank"></a></li>
+          <li><a href="https://www.youtube.com/channel/UCpMxJImZUFRbNxYgtiXki1g" class="fa fa-youtube" target="_blank"></a></li>
+					<!-- <li><a href="projects.html">PROJECTS</a></li> -->
+					<!--<li><a href="Contact.html">CONTACT</a></li>-->
+					<!--<li><a href="Contact.html">mail: info@domain.com</a></li>-->
+				</ul>
+			</div>
+		</div>
 
-    <h4><a href="https://kovakomes.itch.io/unfamiliar" target="_blank">Unfamiliar</a></h4>
-    <p>Multiplatform visual novel created during a 72-hour <a href="https://ldjam.com/events/ludum-dare/42"
-        target="_blank">game jam</a>. Made with <a href="https://unity3d.com/" target="_blank">Unity</a>.</p>
-    <iframe frameborder="0" src="https://itch.io/embed/292227" width="90%" height="167"></iframe>
+	</div><!--End navbar navbar-inverse navbar-fixed-top -->
+	<!--END NAV SECTION -->
 
-    <h4><a href="https://cole-of-oklahoma.itch.io/flight-deck" target="_blank">Flight
-        Deck</a></h4>
-    <p>Multiplatform flight simulator card game created during a 72-hour <a
-        href="https://ldjam.com/events/ludum-dare/41" target="_blank">game jam</a>. Made with <a
-        href="https://unity3d.com/" target="_blank">Unity</a>.</p>
-    <iframe frameborder="0" src="https://itch.io/embed/249268" width="90%" height="167"></iframe>
+	<!--HOME PAGE SECTION-->
+	<div id="home-sec">
 
-    <h4><a href="https://kovakomes.itch.io/falling-through-life" target="_blank">Falling
-        Through Life</a></h4>
-    <p>WebGL arcade game created during a 52-hour <a href="https://itch.io/jam/jimjam" target="_blank">game
-        jam</a>. Made with <a href="https://unity3d.com/" target="_blank">Unity</a>.</p>
-    <iframe frameborder="0" src="https://itch.io/embed/242912" width="90%" height="167"></iframe>
+	<div class="container"  >
+		<div class="row ">
+			<div  class="col-md-12" >
+				<span class="head-main" >
+				"Most good programmers do programming not because they expect to get paid or get adulation by the
+				public, but because it is fun to program."<br/>
+				- Linus Torvalds
+				</span>
+			</div>
+		</div>
+	</div>
 
-    <h1>School Projects</h1>
-    <h4>
-      <a href="https://github.com/adriank1/Get_outta_my_LAIR" target="_blank">
-        Get Outta My Lair!
-      </a>
-    </h4>
-    <p>Multiplatform turn-based rpg written in Java using the <a href="https://libgdx.badlogicgames.com/"
-        target="_blank">libGDX</a> library.</p>
-    <img id="#projectImage" src="assets/img/sdd_titlescreen.png" alt="Get Outta My Lair! - title screen"
-      class="img-responsive" onclick="showImageModal(this)" /><br />
-    <img id="#projectImage" src="assets/img/sdd2.png"
-      alt="Get Outta My Lair! - Bernard the Beholder using his basic laser on an enemy" class="img-responsive"
-      onclick="showImageModal(this)" /><br />
-    <img id="#projectImage" src="assets/img/sdd.png"
-      alt="Get Outta My Lair! - Bernard the Beholder moving through a level" class="img-responsive"
-      onclick="showImageModal(this)" />
+	</div><!--End home-sec -->
 
-    <h4>
-      <a href="https://github.com/adriank1/Siege_Defense" target="_blank">
-        Siege Defense
-      </a>
-    </h4>
-    <p>Android arcade strategy game written in Java using the <a href="https://libgdx.badlogicgames.com/"
-        target="_blank">libGDX</a> library.</p>
-    <img id="#projectImage" src="assets/img/siege.png" alt="Siege Defense - siege units attacking the enemy wall"
-      class="img-responsive" onclick="showImageModal(this)" />
+	<section>
+		<div class="container">
+			<h1>Games Created</h1>
 
-    <h4>
-      <a href="https://github.com/adriank1/One_Life_To_Survive" target="_blank">
-        One Life to Survive
-      </a>
-    </h4>
-    <p>Android zombie survival arcade game written in Java using the <a href="https://libgdx.badlogicgames.com/"
-        target="_blank">libGDX</a> library.</p>
-    <img id="#projectImage" src="assets/img/olts_title.png" alt="One Life to Survive - title screen"
-      class="img-responsive" onclick="showImageModal(this)" /><br />
-    <img id="#projectImage" src="assets/img/olts.png"
-      alt="One Life to Survive - survivor defending against a hoard of approaching zombies" class="img-responsive"
-      onclick="showImageModal(this)" /><br />
-    <img id="#projectImage" src="assets/img/olts_gameover.png"
-      alt="One Life to Survive - game over screen showing score, time played, kills, and shooting accuracy"
-      class="img-responsive" onclick="showImageModal(this)" />
-  </section>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="row" align="center">
+							<h4 class="adjst"><a href="https://kovakomes.itch.io/sacrifice-to-the-flames" target="_blank" class="nostyle">Sacrifice to the Flames</a></h4>
+							<p>Multiplatform arcade game created during a 72-hour <a href="https://ldjam.com/events/ludum-dare/43" target="_blank">game jam</a>. Made with <a href="https://unity3d.com/" target="_blank">Unity</a>.</p>
+							<iframe frameborder="0" src="https://itch.io/embed/339546" width="90%" height="167"></iframe>
+						</div>
+					</div>
+				</div>
 
-  <!--END HOME PAGE SECTION-->
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="row" align="center">
+              <h4 class="adjst"><a href="https://kovakomes.itch.io/unfamiliar" target="_blank" class="nostyle">Unfamiliar</a></h4>
+              <p>Multiplatform visual novel created during a 72-hour <a href="https://ldjam.com/events/ludum-dare/42" target="_blank">game jam</a>. Made with <a href="https://unity3d.com/" target="_blank">Unity</a>.</p>
+              <iframe frameborder="0" src="https://itch.io/embed/292227" width="90%" height="167"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="row" align="center">
+              <h4 class="adjst"><a href="https://cole-of-oklahoma.itch.io/flight-deck" target="_blank" class="nostyle">Flight Deck</a></h4>
+              <p>Multiplatform flight simulator card game created during a 72-hour <a href="https://ldjam.com/events/ludum-dare/41" target="_blank">game jam</a>. Made with <a href="https://unity3d.com/" target="_blank">Unity</a>.</p>
+              <iframe frameborder="0" src="https://itch.io/embed/249268" width="90%" height="167"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="row" align="center">
+              <h4 class="adjst"><a href="https://kovakomes.itch.io/falling-through-life" target="_blank" class="nostyle">Falling Through Life</a></h4>
+              <p>WebGL arcade game created during a 52-hour <a href="https://itch.io/jam/jimjam" target="_blank">game jam</a>. Made with <a href="https://unity3d.com/" target="_blank">Unity</a>.</p>
+              <iframe frameborder="0" src="https://itch.io/embed/242912" width="90%" height="167"></iframe>
+            </div>
+          </div>
+        </div>
+
+			<div class="row">
+
+      <h1>School Projects</h1>
+				<div class="col-md-4 col-sm-4">
+					<div class="panel panel-default">
+					<div class="panel-body">
+						<h4 class="adjst">
+							<a href="https://github.com/adriank1/Get_outta_my_LAIR" target="_blank" class="nostyle">
+								Get Outta My Lair!
+							</a>
+						</h4>
+						<p>Multiplatform turn-based rpg written in Java using the <a href="https://libgdx.badlogicgames.com/" target="_blank">libGDX</a> library.</p>
+						<img id="#projectImage" src="assets/img/sdd_titlescreen.png" alt="Get Outta My Lair! - title screen" class="img-responsive" onclick="showImageModal(this)" /><br />
+						<img id="#projectImage" src="assets/img/sdd2.png" alt="Get Outta My Lair! - Bernard the Beholder using his basic laser on an enemy" class="img-responsive" onclick="showImageModal(this)" /><br />
+						<img id="#projectImage" src="assets/img/sdd.png" alt="Get Outta My Lair! - Bernard the Beholder moving through a level" class="img-responsive" onclick="showImageModal(this)" />
+					</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+					<div class="panel panel-default">
+					<div class="panel-body">
+						<h4 class="adjst">
+							<a href="https://github.com/adriank1/Siege_Defense" target="_blank" class="nostyle">
+								Siege Defense
+							</a>
+						</h4>
+						<p>Android arcade strategy game written in Java using the <a href="https://libgdx.badlogicgames.com/" target="_blank">libGDX</a> library.</p>
+						<img id="#projectImage" src="assets/img/siege.png" alt="Siege Defense - siege units attacking the enemy wall" class="img-responsive" onclick="showImageModal(this)" />
+					</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+					<div class="panel panel-default">
+					<div class="panel-body">
+						<h4 class="adjst">
+							<a href="https://github.com/adriank1/One_Life_To_Survive" target="_blank" class="nostyle">
+								One Life to Survive
+							</a>
+						</h4>
+						<p>Android zombie survival arcade game written in Java using the <a href="https://libgdx.badlogicgames.com/" target="_blank">libGDX</a> library.</p>
+						<img id="#projectImage" src="assets/img/olts_title.png" alt="One Life to Survive - title screen" class="img-responsive" onclick="showImageModal(this)" /><br />
+						<img id="#projectImage" src="assets/img/olts.png" alt="One Life to Survive - survivor defending against a hoard of approaching zombies" class="img-responsive" onclick="showImageModal(this)" /><br />
+						<img id="#projectImage" src="assets/img/olts_gameover.png" alt="One Life to Survive - game over screen showing score, time played, kills, and shooting accuracy" class="img-responsive" onclick="showImageModal(this)" />
+					</div>
+					</div>
+				</div>
+
+			</div>
+		</div> <!--End container -->
+	</section>
+
+	<!--END HOME PAGE SECTION-->
 
   <!-- IMAGE ZOOM MODAL SECTION -->
   <div id="modalForImageZoom" class="imageModal">
@@ -127,9 +199,19 @@
     <div id="imageModalCaption"></div>
   </div>
 
-  <!--FOOTER SECTION -->
-  <footer>2022 Adrian Kovatana</footer>
-  <!-- END FOOTER SECTION -->
-</body>
+	<!--FOOTER SECTION -->
+  <br/><br/><br/>
+	<div id="footer">
+    2022 adriankovatana.github.io
+	</div>
+	<!-- END FOOTER SECTION -->
 
+	<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+	<!-- CORE JQUERY  -->
+	<script src="assets/js/jquery-3.1.0.js"></script>
+	<!-- BOOTSTRAP CORE SCRIPT   -->
+	<script src="assets/js/bootstrap.js"></script>
+  <!-- IMAGE ZOOM MODAL -->
+  <script src="assets/js/modal-image.js"></script>
+</body>
 </html>
