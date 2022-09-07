@@ -8,7 +8,7 @@
 
   /* Colors */
   --brand-color-main: hsl(269, 100%, 50%);
-  --brand-color-accent: hsl(19, 100%, 50%);
+  --brand-color-accent: hsl(62, 100%, 50%);
 }
 
 /* Theme colors */
@@ -27,33 +27,36 @@
 /* 
     Default overrides
  */
+
+/* html {
+  font-size: 24px;
+} */
+
 html,
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: var(--background-color);
+  background-color: var(--background-color-2);
   color: var(--text-color);
+  margin: 0;
 }
 
-/* *,
+*,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-} */
+}
 
 a,
-a:hover,
 a:focus,
 a:active {
   text-decoration: none;
-  color: var(--text-color-2);
+  color: var(--text-color);
 }
 
-/* li {
-  list-style: none;
-} */
+a:hover {
+  color: var(--text-color-2);
+}
 
 img {
   max-width: 100%;
@@ -64,35 +67,35 @@ img {
     Misc
  */
 
-.container {
-  display: grid;
-  grid-template-rows: var(--header-bar-height) 1fr;
-}
-
 header {
   width: 100%;
-  height: 100%;
+  height: var(--header-bar-height);
   background: var(--brand-color-main);
 
   display: flex;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
 }
 
 main {
-  width: 100%;
-  height: 100%;
+  margin: 1rem;
+  margin-top: var(--header-bar-height);
+  background-color: var(--background-color);
   overflow: auto;
 }
 
 
 /* tablet and laptop */
-@media only screen and (min-width: 40rem) {
-  /* section {
-    max-width: 40rem;
-  } */
-}
+@media only screen and (min-width: 40rem) {}
 
 /* desktop */
 @media only screen and (min-width: 72rem) {}
+
+/* 640px and 1152px */
