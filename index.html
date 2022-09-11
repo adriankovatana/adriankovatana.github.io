@@ -3,21 +3,23 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A collection of my projects and skills" />
   <meta name="author" content="Adrian Kovatana" />
 
   <title>Porfolio - Adrian Kovatana</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="assets/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
   <div class="container">
     <header>
-      <a href="#me">Adrian Kovatana</a>
-      <nav>
+      <a href="#">Adrian Kovatana</a>
+      <button id="top-nav-toggle-btn"><i class="fa fa-bars"></i></button>
+      <nav id="top-nav" class="hidden">
         <a href="#jam">Game Jam Projects</a>
         <a href="#school">School Projects</a>
         <a href="#contact">Contact</a>
@@ -29,6 +31,7 @@
         <h1>Adrian Kovatana</h1>
         <p>I am a game programmer with 6+ years of experience using Unity.</p>
       </section>
+
       <section id="jam">
         <h2>Game Jam Projects</h2>
         <p>A list of game jam submissions I've collaborated on.</p>
@@ -262,6 +265,32 @@
     </main>
   </div>
   <script>
+    const topNavId = "top-nav";
+    const hideNavClassName = "hidden";
+    const showNavIconName = "fa-bars";
+    const hideNavIconName = "fa-times";
+
+    // Top nav
+    function TogglePageNavs() {
+      var icon = this.querySelector("i");
+      var topNav = document.getElementById(topNavId);
+
+      if (topNav.classList.contains(hideNavClassName)) {
+        // Show nav
+        topNav.classList.remove(hideNavClassName);
+        icon.classList.remove(showNavIconName);
+        icon.classList.add(hideNavIconName);
+      }
+      else {
+        // Hide nav
+        topNav.classList.add(hideNavClassName);
+        icon.classList.remove(hideNavIconName);
+        icon.classList.add(showNavIconName);
+      }
+    }
+    document.getElementById("top-nav-toggle-btn").onclick = TogglePageNavs;
+
+    // Footer
     var footerYear = document.getElementById("footer-year");
     var year = new Date().getFullYear();
     footerYear.innerHTML = year;

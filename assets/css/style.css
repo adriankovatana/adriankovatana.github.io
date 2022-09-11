@@ -20,7 +20,7 @@
   --accent-color-2: hsl(0, 0%, 15%);
   --text-color: hsl(0, 0%, 100%);
   --text-color-2: hsl(0, 0%, 70%);
-  --shadow-color: var(--brand-color-main);
+  --shadow-color: var(--accent-color);
 }
 
 
@@ -36,7 +36,7 @@ html,
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: var(--background-color-2);
+  background-color: var(--shadow-color);
   color: var(--text-color);
   margin: 0;
 }
@@ -74,21 +74,52 @@ header {
 
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: sticky;
   top: 0;
   padding: 1rem;
 }
 
-nav {
+main {
+  padding: 1rem;
+  background-color: var(--background-color);
+}
+
+section:target::before {
+  content: "";
+  display: block;
+  height: var(--header-bar-height);
+  margin-top: calc(var(--header-bar-height) * -1);
+}
+
+footer {
+  margin-top: calc(100vh - var(--header-bar-height) - 1rem);
+}
+
+button#top-nav-toggle-btn {
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+nav#top-nav {
+  position: absolute;
+  right: 0;
+  top: var(--header-bar-height);
+  padding: 1rem;
+
+  background-color: var(--accent-color);
+
   display: flex;
+  flex-direction: column;
   gap: 1.5rem;
 }
 
-main {
-  margin: 1rem;
-  margin-top: var(--header-bar-height);
-  background-color: var(--background-color);
-  overflow: auto;
+nav#top-nav.hidden {
+  display: none;
 }
 
 
@@ -98,10 +129,34 @@ main {
 */
 
 /* landscape phone - 576px */
-@media only screen and (min-width: 36rem) {}
+@media only screen and (min-width: 36rem) {
+  button#top-nav-toggle-btn {
+    display: none;
+  }
+
+  nav#top-nav {
+    position: relative;
+    right: inherit;
+    top: inherit;
+    padding: 0;
+
+    background-color: transparent;
+
+    flex-direction: row;
+  }
+
+  nav#top-nav.hidden {
+    display: inherit;
+  }
+}
 
 /* tablet - 768px */
-@media only screen and (min-width: 48rem) {}
+@media only screen and (min-width: 48rem) {
+  .container {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+}
 
 /* laptop - 992px */
 @media only screen and (min-width: 62rem) {}
