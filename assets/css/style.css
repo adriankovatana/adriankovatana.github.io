@@ -14,13 +14,13 @@
 /* Theme colors */
 :root,
 :root[data-theme="dark"] {
-  --background-color: hsl(0, 0%, 10%);
-  --background-color-2: hsl(0, 0%, 11%);
+  --background-color: hsl(0, 0%, 12%);
   --accent-color: hsl(0, 0%, 25%);
-  --accent-color-2: hsl(0, 0%, 15%);
   --text-color: hsl(0, 0%, 100%);
   --text-color-2: hsl(0, 0%, 70%);
   --shadow-color: var(--accent-color);
+
+  --card-color: hsl(0, 0%, 9%);
 }
 
 
@@ -120,6 +120,17 @@ nav#top-nav {
 
 nav#top-nav.hidden {
   display: none;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--card-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 
