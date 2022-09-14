@@ -142,6 +142,26 @@ nav#top-nav.hidden {
   grid-template-columns: repeat(2, 1fr);
 }
 
+ul.badges {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap-reverse;
+}
+
+ul.badges>li {
+  padding: 0 0.75rem;
+  border-radius: 69em;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  text-transform: uppercase;
+  background-color: var(--brand-color-main);
+}
+
 
 /*
     Breakpoints
