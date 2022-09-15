@@ -9,6 +9,12 @@
   /* Colors */
   --brand-color-main: hsl(269, 100%, 50%);
   --brand-color-accent: hsl(62, 100%, 50%);
+
+  /* Badges */
+  --badge-color-unity: hsl(0, 0%, 0%);
+  --badge-color-csharp: hsl(273, 100%, 50%);
+  --badge-color-jam: hsl(31, 93%, 55%);
+  --badge-color-itch: hsl(350, 70%, 51%);
 }
 
 /* Theme colors */
@@ -142,7 +148,7 @@ nav#top-nav.hidden {
   grid-template-columns: repeat(2, 1fr);
 }
 
-ul.badges {
+.badges {
   list-style: none;
   padding: 0;
   margin: 0.5rem 0;
@@ -152,7 +158,7 @@ ul.badges {
   flex-wrap: wrap-reverse;
 }
 
-ul.badges>li {
+.badge {
   padding: 0 0.75rem;
   border-radius: 69em;
   font-weight: 700;
@@ -160,6 +166,22 @@ ul.badges>li {
   line-height: 1.125rem;
   text-transform: uppercase;
   background-color: var(--brand-color-main);
+}
+
+.unity {
+  background-color: var(--badge-color-unity);
+}
+
+.csharp {
+  background-color: var(--badge-color-csharp);
+}
+
+.jam {
+  background-color: var(--badge-color-jam);
+}
+
+.itch {
+  background-color: var(--badge-color-itch);
 }
 
 
