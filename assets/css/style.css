@@ -13,8 +13,12 @@
   /* Badges */
   --badge-color-unity: hsl(0, 0%, 0%);
   --badge-color-csharp: hsl(273, 100%, 50%);
-  --badge-color-jam: hsl(31, 93%, 55%);
   --badge-color-itch: hsl(350, 70%, 51%);
+  --badge-color-jam: hsl(31, 93%, 45%);
+  --badge-color-libGDX: hsl(0, 0%, 0%);
+  --badge-color-java: hsl(204, 32%, 48%);
+  --badge-color-coursework: hsl(236, 90%, 44%);
+  --badge-color-android: hsl(147, 69%, 40%);
 }
 
 /* Theme colors */
@@ -128,6 +132,10 @@ nav#top-nav.hidden {
   display: none;
 }
 
+.logo-text {
+  font-weight: 700;
+}
+
 .cards {
   display: grid;
   justify-content: center;
@@ -176,12 +184,28 @@ nav#top-nav.hidden {
   background-color: var(--badge-color-csharp);
 }
 
+.itch {
+  background-color: var(--badge-color-itch);
+}
+
 .jam {
   background-color: var(--badge-color-jam);
 }
 
-.itch {
-  background-color: var(--badge-color-itch);
+.libGDX {
+  background-color: var(--badge-color-libGDX);
+}
+
+.java {
+  background-color: var(--badge-color-java);
+}
+
+.coursework {
+  background-color: var(--badge-color-coursework);
+}
+
+.android {
+  background-color: var(--badge-color-android);
 }
 
 
