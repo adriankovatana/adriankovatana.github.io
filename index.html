@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="assets/css/style.css" rel="stylesheet" />
+  <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
@@ -303,37 +304,6 @@
       <footer>Copyright © <span id="footer-year"></span> Adrian Kovatana. All Rights Reserved.</footer>
     </main>
   </div>
-  <script>
-    const topNavId = "top-nav";
-    const hideNavClassName = "hidden";
-    const showNavIconName = "fa-bars";
-    const hideNavIconName = "fa-times";
-
-    // Top nav
-    function TogglePageNavs() {
-      var icon = this.querySelector("i");
-      var topNav = document.getElementById(topNavId);
-
-      if (topNav.classList.contains(hideNavClassName)) {
-        // Show nav
-        topNav.classList.remove(hideNavClassName);
-        icon.classList.remove(showNavIconName);
-        icon.classList.add(hideNavIconName);
-      }
-      else {
-        // Hide nav
-        topNav.classList.add(hideNavClassName);
-        icon.classList.remove(hideNavIconName);
-        icon.classList.add(showNavIconName);
-      }
-    }
-    document.getElementById("top-nav-toggle-btn").onclick = TogglePageNavs;
-
-    // Footer
-    var footerYear = document.getElementById("footer-year");
-    var year = new Date().getFullYear();
-    footerYear.innerHTML = year;
-  </script>
 </body>
 
 </html>
