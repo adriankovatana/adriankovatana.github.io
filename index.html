@@ -54,9 +54,21 @@
                 </a>
               </li>
             </ul>
-            <img src="assets/img/jam/flightdeck_cover.png" alt="Flight Deck - cover" />
-            <img src="assets/img/jam/flightdeck_gameplay_1.png" alt="Flight Deck - cards on the screen" />
-            <img src="assets/img/jam/flightdeck_gameplay_3.png" alt="Flight Deck - card zoomed in" />
+            <div class="carousel" data-carousel>
+              <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+              <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+              <ul data-slides>
+                <li class="carousel-slide-base" data-active>
+                  <img src="assets/img/jam/flightdeck_cover.png" alt="Flight Deck - cover" />
+                </li>
+                <li class="carousel-slide">
+                  <img src="assets/img/jam/flightdeck_gameplay_1.png" alt="Flight Deck - cards on the screen" />
+                </li>
+                <li class="carousel-slide">
+                  <img src="assets/img/jam/flightdeck_gameplay_3.png" alt="Flight Deck - card zoomed in" />
+                </li>
+              </ul>
+            </div>
             <p>2D digital card game.</p>
 
             <h4>Noteable contributions:</h4>
@@ -161,8 +173,18 @@
               <li class="badge jam"><a href="https://itch.io/jam/brackeys-8/rate/1681397" target="_blank">game jam</a>
               </li>
             </ul>
-            <img src="assets/img/jam/luminous_cover.png" alt="Luminous - title screen" />
-            <img src="assets/img/jam/luminous_gameplay.png" alt="Luminous - Boy holding a candle in the dark." />
+            <div class="carousel" data-carousel>
+              <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+              <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+              <ul data-slides>
+                <li class="carousel-slide-base" data-active>
+                  <img src="assets/img/jam/luminous_cover.png" alt="Luminous - title screen" />
+                </li>
+                <li class="carousel-slide">
+                  <img src="assets/img/jam/luminous_gameplay.png" alt="Luminous - Boy holding a candle in the dark." />
+                </li>
+              </ul>
+            </div>
             <p>2D adventure/puzzle game.</p>
 
             <h4>Noteable contributions:</h4>
@@ -211,11 +233,23 @@
               <li class="badge java">Java</li>
               <li class="badge coursework">Capstone Course</li>
             </ul>
-            <img src="assets/img/school/sdd_titlescreen.png" alt="Get Outta My Lair! - title screen" />
-            <img src="assets/img/school/sdd2.png"
-              alt="Get Outta My Lair! - Bernard the Beholder using his basic laser on an enemy" />
-            <img src="assets/img/school/sdd.png"
-              alt="Get Outta My Lair! - Bernard the Beholder moving through a level" />
+            <div class="carousel" data-carousel>
+              <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+              <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+              <ul data-slides>
+                <li class="carousel-slide-base" data-active>
+                  <img src="assets/img/school/sdd_titlescreen.png" alt="Get Outta My Lair! - title screen" />
+                </li>
+                <li class="carousel-slide">
+                  <img src="assets/img/school/sdd2.png"
+                    alt="Get Outta My Lair! - Bernard the Beholder using his basic laser on an enemy" />
+                </li>
+                <li class="carousel-slide">
+                  <img src="assets/img/school/sdd.png"
+                    alt="Get Outta My Lair! - Bernard the Beholder moving through a level" />
+                </li>
+              </ul>
+            </div>
             <p>2D top-down turn-based rpg. <a href="https://github.com/adriankovatana/Get_outta_my_LAIR"
                 target="_blank">GitHub</a>
             </p>
@@ -227,6 +261,45 @@
               <li>grid-based character movement</li>
               <li>turn-based input system</li>
               <li>full-screen map and mini-map</li>
+              <li>UI/HUD scripting</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>One Life to Survive</h3>
+            <ul class="badges">
+              <li class="badge libGDX">libGDX</li>
+              <li class="badge java">Java</li>
+              <li class="badge android">Android</li>
+              <li class="badge coursework">Independent Study</li>
+            </ul>
+            <div class="carousel" data-carousel>
+              <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+              <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+              <ul data-slides>
+                <li class="carousel-slide-base" data-active>
+                  <img src="assets/img/school/olts.png"
+                    alt="One Life to Survive - survivor defending against a hoard of approaching zombies" />
+                </li>
+                <li class="carousel-slide">
+                  <img src="assets/img/school/olts_gameover.png"
+                    alt="One Life to Survive - game over screen showing score, time played, kills, and shooting accuracy" />
+                </li>
+              </ul>
+            </div>
+            <p>2D zombie survival arcade game. <a href="https://github.com/adriankovatana/One_Life_To_Survive"
+                target="_blank">GitHub</a>
+            </p>
+
+            <h4>Highlights:</h4>
+            <ul>
+              <li>game state machine</li>
+              <li>character movement and rotation</li>
+              <li>character upgrade system</li>
+              <li>enemy spawning and pooling</li>
+              <li>enemy AI movement behavior</li>
+              <li>projectile spawning and pooling</li>
+              <li>projectile collision</li>
               <li>UI/HUD scripting</li>
             </ul>
           </div>
@@ -260,34 +333,6 @@
             </ul>
           </div>
 
-          <div class="card">
-            <h3>One Life to Survive</h3>
-            <ul class="badges">
-              <li class="badge libGDX">libGDX</li>
-              <li class="badge java">Java</li>
-              <li class="badge android">Android</li>
-              <li class="badge coursework">Independent Study</li>
-            </ul>
-            <img src="assets/img/school/olts.png"
-              alt="One Life to Survive - survivor defending against a hoard of approaching zombies" />
-            <img src="assets/img/school/olts_gameover.png"
-              alt="One Life to Survive - game over screen showing score, time played, kills, and shooting accuracy" />
-            <p>2D zombie survival arcade game. <a href="https://github.com/adriankovatana/One_Life_To_Survive"
-                target="_blank">GitHub</a>
-            </p>
-
-            <h4>Highlights:</h4>
-            <ul>
-              <li>game state machine</li>
-              <li>character movement and rotation</li>
-              <li>character upgrade system</li>
-              <li>enemy spawning and pooling</li>
-              <li>enemy AI movement behavior</li>
-              <li>projectile spawning and pooling</li>
-              <li>projectile collision</li>
-              <li>UI/HUD scripting</li>
-            </ul>
-          </div>
         </div>
       </section>
 
@@ -297,7 +342,7 @@
 
         <ul>
           <li><a href="https://www.linkedin.com/in/adriankovatana" target="_blank">LinkedIn</a></li>
-          <li><a href="https://github.com/adriankovatana" target="_blank">GitHub</a></li>
+          <li><a href="https://twitter.com/AdrianKovatana" target="_blank">Twitter</a></li>
         </ul>
       </section>
 

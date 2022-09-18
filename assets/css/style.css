@@ -1,4 +1,4 @@
-/* 
+﻿/* 
     ROOT
 */
 
@@ -83,6 +83,7 @@ header {
   position: sticky;
   top: 0;
   padding: 1rem;
+  z-index: 999;
 }
 
 main {
@@ -202,6 +203,69 @@ nav#top-nav.hidden {
 
 .android {
   background-color: var(--badge-color-android);
+}
+
+
+/*
+    Carousel
+*/
+
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carousel>ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.carousel-slide[data-active] {
+  z-index: 1;
+}
+
+.carousel-slide>img {
+  display: block;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 0.25rem;
+}
+
+.carousel-button.next {
+  right: 0.25rem;
 }
 
 
