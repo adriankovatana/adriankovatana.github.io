@@ -1,270 +1,319 @@
-﻿
-/*=============================================================
-    Authour URI: www.binarytheme.com
-    License: Commons Attribution 3.0
+﻿/* 
+    ROOT
+*/
 
-    http://creativecommons.org/licenses/by/3.0/
+:root {
+  /* Sizing */
+  --header-bar-height: 3.5rem;
 
-    100% To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
-    ========================================================  */
+  /* Colors */
+  --brand-color-main: hsl(269, 100%, 50%);
+  --brand-color-accent: hsl(62, 100%, 50%);
+
+  /* Badges */
+  --badge-color-unity: hsl(0, 0%, 0%);
+  --badge-color-csharp: hsl(273, 100%, 50%);
+  --badge-color-itch: hsl(350, 70%, 51%);
+  --badge-color-jam: hsl(31, 93%, 45%);
+  --badge-color-libGDX: hsl(0, 0%, 0%);
+  --badge-color-java: hsl(204, 32%, 48%);
+  --badge-color-coursework: hsl(236, 90%, 44%);
+  --badge-color-android: hsl(147, 69%, 40%);
+}
+
+/* Theme colors */
+:root,
+:root[data-theme="dark"] {
+  --background-color: hsl(0, 0%, 12%);
+  --accent-color: hsl(0, 0%, 25%);
+  --text-color: hsl(0, 0%, 100%);
+  --text-color-2: hsl(0, 0%, 70%);
+  --shadow-color: var(--accent-color);
+
+  --card-color: hsl(0, 0%, 9%);
+}
 
 
-/*=======================================
-    GENERAL STYLES
-==================================================*/
+/* 
+    Default overrides
+*/
 
+html,
 body {
-  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--shadow-color);
+  color: var(--text-color);
   margin: 0;
-  min-height: 100vh;
-  font-family:'Open Sans', sans-serif;
-  font-size:14px;
-  background-image:url(../img/sativa.png);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family:'Open Sans', sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-h1 {
-    line-height:50px;
-    font-weight:900;
-    font-size:30px;
-    text-transform:uppercase;
-    text-align:center;
-    color:#4A66FD;
-}
-    h1::after {
-        display: block;
-content: "";
-height: 2px;
-width: 150px;
-background: #4A66FD;
-margin: 5px auto 40px;
-    }
-
-
-.text-center {
-    text-align:center;
+a,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
-h2 {
-    line-height:50px;
-    color:#424242;
-}
-h3 {
-    line-height:30px;
-    padding-bottom:20px;
-}
-h4 {
-   padding-top: 25px;
-line-height: 40px;
-padding-bottom: 0px;
-font-size: 22px;
-font-weight: 900;
-
-}
-.adjst {
-     padding-top: 0px;
-}
-p {
-    font-weight:300;
-    line-height:30px;
-    padding-bottom:15px;
+a:hover {
+  color: var(--text-color-2);
 }
 
-.top-pad {
-    padding-top:55px;
-}
-.f-s {
-    font-size:20px;
+img {
+  max-width: 100%;
 }
 
 
-.g-pad-bottom {
-    padding-bottom:40px;
+/* 
+    Misc
+*/
+
+header {
+  width: 100%;
+  height: var(--header-bar-height);
+  background: var(--brand-color-main);
+
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  z-index: 999;
 }
 
-
-
-.form-control {
-        background-color: rgba(255, 255, 255, 0);
+main {
+  padding: 1rem;
+  background-color: var(--background-color);
 }
 
-a.nostyle {
-	text-decoration: inherit;
-	color: inherit;
+section:target::before {
+  content: "";
+  display: block;
+  height: var(--header-bar-height);
+  margin-top: calc(var(--header-bar-height) * -1);
 }
 
-/* ===========================================================
-   NAVBAR CHANGES   
-   ============================================================*/
-.navbar {
-	font-size: 16px;
+footer {
+  margin-top: calc(100vh - var(--header-bar-height) - 1rem);
 }
 
-.navbar-inverse {
-background: #424242;
-min-height: 60px;
-padding-top: 5px;
-
+button#top-nav-toggle-btn {
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.navbar-inverse .navbar-nav > .active > a {
-	background: #ffffff;
-}
-
-.navbar-inverse .navbar-brand {
-	color: #ffffff;
-	font-weight: bolder;
-	font-size: 25px;
-    font-weight:900;
-	letter-spacing: 2px;
-}
-.navbar-inverse :hover .navbar-brand:hover {
-	color: #ffffff;	
-}
-.navbar-inverse .navbar-nav > li > a {
-color: #FFFFFF;
-}
-.navbar-inverse {
-border-color: #424242;
-}
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-border-color: #424242;
-}
-/*=======================================
-    HOME SECTION STYLES
-==================================================*/
-
-#home-sec { 
-  
-    
-background: url(../img/drunk_painting.jpg) no-repeat 50% 50%;
-background-attachment: fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-width: 100%;
-display: block;
-height: auto;
- padding-top:190px;
-    padding-bottom:200px;
-    color:#000;
-}
-
-.head-main {
-    font-size:56px ;
-    font-weight:900;
-    color:#fff;
-    padding:5px;
-    text-transform:uppercase;
-    text-shadow: 0 0 12px #000000;
-}
-
-.head-last {
-    font-size:18px ;
-    font-weight:900;
-    padding:35px 20px 60px 20px;
-}
-
-/*=======================================
-    PROJECTS SECTION STYLES
-==================================================*/
-
-.coming-soon {
-    font-size:32px;
-    font-weight:900;
-    text-transform:uppercase;
-	text-align:center;
-    
-}
-
-/*=======================================
-    Contact STYLES
-==================================================*/
-
-.cnt {
-width: 100%;
-min-height: 350px;
-border: 1px solid #e1e1e1;
-}
-/*=======================================
-    FOOTER STYLES
-==================================================*/
-
-
-#footer {
+nav#top-nav {
   position: absolute;
   right: 0;
-  bottom: 0;
-  left: 0;
-    background-color:#424242;
-    color:#fff;
-    padding:2vh 5vw 2vh 5vw;
-    text-align:right;
+  top: var(--header-bar-height);
+  padding: 1rem;
+
+  background-color: var(--accent-color);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.rights {
-  float: right;
+nav#top-nav.hidden {
+  display: none;
+}
+
+.logo-text {
+  font-weight: 700;
+}
+
+.cards {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  max-width: 32rem;
+  background-color: var(--card-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.portrait-images {
+  display: grid;
+  justify-content: center;
+  gap: 0.25rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.badges {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap-reverse;
+}
+
+.badge {
+  padding: 0 0.75rem;
+  border-radius: 69em;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  text-transform: uppercase;
+  background-color: var(--brand-color-main);
+}
+
+.unity {
+  background-color: var(--badge-color-unity);
+}
+
+.csharp {
+  background-color: var(--badge-color-csharp);
+}
+
+.itch {
+  background-color: var(--badge-color-itch);
+}
+
+.jam {
+  background-color: var(--badge-color-jam);
+}
+
+.libGDX {
+  background-color: var(--badge-color-libGDX);
+}
+
+.java {
+  background-color: var(--badge-color-java);
+}
+
+.coursework {
+  background-color: var(--badge-color-coursework);
+}
+
+.android {
+  background-color: var(--badge-color-android);
 }
 
 
-/*=======================================
-    MEDIA QUERIES
-    
-    ==================================================*/
+/*
+    Carousel
+*/
 
-@media all and (max-width:640px) and (min-width:405px) {
-    .head-main { 
-        font-size:50px ;
-    }
-}
-@media all and (max-width:405px) and (min-width:200px) {
-    .head-main { 
-        font-size:35px ;
-    }
+.carousel {
+  position: relative;
+  width: 100%;
 }
 
-
-/*=======================================
-    SOCIAL MEDIA
-    
-    ==================================================*/
-.fa {
-  font-size: 18px;
-  text-align: center;
-  text-decoration: none;
+.carousel>ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.fa:link {
-  text-decoration: none;
-  color: inherit;
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
-.fa:visited {
-  text-decoration: none;
-  color: inherit;
+.carousel-slide[data-active] {
+  z-index: 1;
 }
 
-.fa:hover {
-    opacity: 0.7;
-    text-decoration: none;
-    color: inherit;
+.carousel-slide>img {
+  display: block;
 }
 
-.fa:active {
-  text-decoration: none;
-  color: inherit;
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
 }
 
-/*.fa-linkedin {
-  background: #0077b5;
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
 }
 
-.fa-github {
-  background: #333;
-}*/
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 0.25rem;
+}
+
+.carousel-button.next {
+  right: 0.25rem;
+}
+
+
+/*
+    Breakpoints
+    assuming 1 rem = 16px
+*/
+
+/* landscape phone - 576px */
+@media only screen and (min-width: 36rem) {
+  button#top-nav-toggle-btn {
+    display: none;
+  }
+
+  nav#top-nav {
+    position: relative;
+    right: inherit;
+    top: inherit;
+    padding: 0;
+
+    background-color: transparent;
+
+    flex-direction: row;
+  }
+
+  nav#top-nav.hidden {
+    display: inherit;
+  }
+}
+
+/* tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  .container {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+}
+
+/* laptop - 992px */
+@media only screen and (min-width: 62rem) {
+  .container {
+    max-width: 62rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* desktop - 1200px */
+@media only screen and (min-width: 75rem) {}

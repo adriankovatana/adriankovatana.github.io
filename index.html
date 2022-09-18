@@ -1,217 +1,354 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-theme="dark">
+
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<meta name="description" content="Webpage to show the collection of my projects and skills" />
-	<meta name="author" content="Adrian Kovatana" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A collection of my projects and skills" />
+  <meta name="author" content="Adrian Kovatana" />
 
-	<title>Porfolio - Adrian Kovatana</title>
+  <title>Porfolio - Adrian Kovatana</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-  <!-- Open Graph -->
-  <meta property="og:image" content="assets/img/drunk_painting.jpg">
-
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/img/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-
-	<!--REQUIRED STYLE SHEETS-->
-
-	<!-- BOOTSTRAP CORE STYLE CSS -->
-	<link href="assets/css/bootstrap.css" rel="stylesheet" />
-	<!-- FONTAWESOME STYLE CSS -->
-	<!-- <link href="assets/css/font-awesome.css" rel="stylesheet" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!--ANIMATED FONTAWESOME STYLE CSS -->
-	<link href="assets/css/font-awesome-animation.css" rel="stylesheet" />
-	<!-- CUSTOM STYLE CSS -->
-	<link href="assets/css/style.css" rel="stylesheet" />
-	<!-- GOOGLE FONT -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-  <!-- IMAGE ZOOM MODAL CSS -->
-  <link href="assets/css/modal-image.css" rel="stylesheet" />
-
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <script src="assets/js/main.js" defer></script>
 </head>
+
 <body>
-	<!-- NAV SECTION -->
-	<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <header>
+      <a href="#" class="logo-text">Adrian Kovatana</a>
+      <button id="top-nav-toggle-btn"><i class="fa fa-bars"></i></button>
+      <nav id="top-nav" class="hidden">
+        <a href="#jam">Game Jam Projects</a>
+        <a href="#school">School Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<span class="navbar-brand" href="index.html">ADRIAN KOVATANA</span>
-			</div>
+    <main>
+      <section id="me">
+        <h1>About Me</h1>
+        <p>My name is Adrian Kovatana. I am a game programmer with 6+ years of experience using Unity with C#.</p>
+      </section>
 
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="https://www.linkedin.com/in/adriankovatana" class="fa fa-linkedin" target="_blank"></a></li>
-					<li><a href="https://github.com/adriankovatana" class="fa fa-github" target="_blank"></a></li>
-          <li><a href="https://twitter.com/AdrianKovatana" class="fa fa-twitter" target="_blank"></a></li>
-          <li><a href="https://www.youtube.com/channel/UCpMxJImZUFRbNxYgtiXki1g" class="fa fa-youtube" target="_blank"></a></li>
-					<!-- <li><a href="projects.html">PROJECTS</a></li> -->
-					<!--<li><a href="Contact.html">CONTACT</a></li>-->
-					<!--<li><a href="Contact.html">mail: info@domain.com</a></li>-->
-				</ul>
-			</div>
-		</div>
+      <section id="jam">
+        <h2>Game Jam Projects</h2>
+        <p>Here is a list of game jam submissions I've collaborated on.</p>
 
-	</div><!--End navbar navbar-inverse navbar-fixed-top -->
-	<!--END NAV SECTION -->
-
-	<!--HOME PAGE SECTION-->
-	<div id="home-sec">
-
-	<div class="container"  >
-		<div class="row ">
-			<div  class="col-md-12" >
-				<span class="head-main" >
-				"Most good programmers do programming not because they expect to get paid or get adulation by the
-				public, but because it is fun to program."<br/>
-				- Linus Torvalds
-				</span>
-			</div>
-		</div>
-	</div>
-
-	</div><!--End home-sec -->
-
-	<section>
-		<div class="container">
-			<h1>Games Created</h1>
-
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<div class="row" align="center">
-							<h4 class="adjst"><a href="https://kovakomes.itch.io/sacrifice-to-the-flames" target="_blank" class="nostyle">Sacrifice to the Flames</a></h4>
-							<p>Multiplatform arcade game created during a 72-hour <a href="https://ldjam.com/events/ludum-dare/43" target="_blank">game jam</a>. Made with <a href="https://unity3d.com/" target="_blank">Unity</a>.</p>
-							<iframe frameborder="0" src="https://itch.io/embed/339546" width="90%" height="167"></iframe>
-						</div>
-					</div>
-				</div>
-
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <div class="row" align="center">
-              <h4 class="adjst"><a href="https://kovakomes.itch.io/unfamiliar" target="_blank" class="nostyle">Unfamiliar</a></h4>
-              <p>Multiplatform visual novel created during a 72-hour <a href="https://ldjam.com/events/ludum-dare/42" target="_blank">game jam</a>. Made with <a href="https://unity3d.com/" target="_blank">Unity</a>.</p>
-              <iframe frameborder="0" src="https://itch.io/embed/292227" width="90%" height="167"></iframe>
+        <div class="cards">
+          <div class="card">
+            <h3>Flight Deck</h3>
+            <ul class="badges">
+              <li class="badge unity">Unity</li>
+              <li class="badge csharp">C#</li>
+              <li class="badge itch">
+                <a href="https://cole-of-oklahoma.itch.io/flight-deck" target="_blank">
+                  itch.io
+                </a>
+              </li>
+              <li class="badge jam">
+                <a href="https://ldjam.com/events/ludum-dare/41/flight-deck" target="_blank">
+                  game jam
+                </a>
+              </li>
+            </ul>
+            <div class="carousel" data-carousel>
+              <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+              <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+              <ul data-slides>
+                <li class="carousel-slide-base" data-active>
+                  <img src="assets/img/jam/flightdeck_cover.png" alt="Flight Deck - cover" />
+                </li>
+                <li class="carousel-slide">
+                  <img src="assets/img/jam/flightdeck_gameplay_1.png" alt="Flight Deck - cards on the screen" />
+                </li>
+                <li class="carousel-slide">
+                  <img src="assets/img/jam/flightdeck_gameplay_3.png" alt="Flight Deck - card zoomed in" />
+                </li>
+              </ul>
             </div>
+            <p>2D digital card game.</p>
+
+            <h4>Noteable contributions:</h4>
+            <ul>
+              <li>game state machine</li>
+              <li>music and SFX controller</li>
+              <li>UI scripting</li>
+              <li>card animation controller</li>
+              <li>card sorting behavior in hand</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Unfamiliar</h3>
+            <ul class="badges">
+              <li class="badge unity">Unity</li>
+              <li class="badge csharp">C#</li>
+              <li class="badge itch"><a href="https://kovakomes.itch.io/unfamiliar" target="_blank">itch.io</a></li>
+              <li class="badge jam"><a href="https://ldjam.com/events/ludum-dare/42/unfamiliar" target="_blank">game
+                  jam</a>
+              </li>
+            </ul>
+            <img src="assets/img/jam/unfamiliar_cover.png" alt="Unfamiliar - cover" />
+            <p>2D visual novel / click adventure.</p>
+
+            <h4>Noteable contributions:</h4>
+            <ul>
+              <li>game state machine</li>
+              <li>music and SFX controller</li>
+              <li>UI scripting</li>
+              <li>dialogue and choice system</li>
+              <li>scene management and transitions</li>
+              <li>animation controller for interactable items</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Falling Through Life</h3>
+            <ul class="badges">
+              <li class="badge unity">Unity</li>
+              <li class="badge csharp">C#</li>
+              <li class="badge itch"><a href="https://kovakomes.itch.io/falling-through-life"
+                  target="_blank">itch.io</a>
+              </li>
+              <li class="badge jam"><a href="https://itch.io/jam/jimjam/rate/242912" target="_blank">game jam</a></li>
+            </ul>
+            <div class="portrait-images">
+              <img src="assets/img/jam/jimjam1_gameplay.png"
+                alt="Falling Through Life - skydiver falling through clouds in the sky" />
+              <img src="assets/img/jam/jimjam1_gameover.png" alt="Falling Through Life - game over screen" />
+            </div>
+            <p>2D arcade game.</p>
+
+            <h4>Noteable contributions:</h4>
+            <ul>
+              <li>game state machine</li>
+              <li>music and SFX controller</li>
+              <li>UI scripting</li>
+              <li>lane-based character movement</li>
+              <li>character animation controller</li>
+              <li>cloud collision behavior</li>
+              <li>debris collision behavior</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Sacrifice to the Flames</h3>
+            <ul class="badges">
+              <li class="badge unity">Unity</li>
+              <li class="badge csharp">C#</li>
+              <li class="badge itch"><a href="https://kovakomes.itch.io/sacrifice-to-the-flames"
+                  target="_blank">itch.io</a>
+              </li>
+              <li class="badge jam"><a href="https://ldjam.com/events/ludum-dare/43/sacrifice-to-the-flames"
+                  target="_blank">game jam</a>
+              </li>
+            </ul>
+            <div class="portrait-images">
+              <img src="assets/img/jam/sacrificetotheflames_gameplay_1.gif"
+                alt="Sacrifice to the Flames - choosing people to save from a burning building" />
+              <img src="assets/img/jam/sacrificetotheflames_gameplay_2.gif"
+                alt="Sacrifice to the Flames - choosing people to sacrifice to the demon to escape the building" />
+            </div>
+            <p>2D arcade game.</p>
+
+            <h4>Noteable contributions:</h4>
+            <ul>
+              <li>game state machine</li>
+              <li>music and SFX controller</li>
+              <li>UI scripting</li>
+              <li>random generator for character info</li>
+              <li>win condition logic</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Luminous</h3>
+            <ul class="badges">
+              <li class="badge unity">Unity</li>
+              <li class="badge csharp">C#</li>
+              <li class="badge itch"><a href="https://dragonlens.itch.io/luminous" target="_blank">itch.io</a></li>
+              <li class="badge jam"><a href="https://itch.io/jam/brackeys-8/rate/1681397" target="_blank">game jam</a>
+              </li>
+            </ul>
+            <div class="carousel" data-carousel>
+              <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+              <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+              <ul data-slides>
+                <li class="carousel-slide-base" data-active>
+                  <img src="assets/img/jam/luminous_cover.png" alt="Luminous - title screen" />
+                </li>
+                <li class="carousel-slide">
+                  <img src="assets/img/jam/luminous_gameplay.png" alt="Luminous - Boy holding a candle in the dark." />
+                </li>
+              </ul>
+            </div>
+            <p>2D adventure/puzzle game.</p>
+
+            <h4>Noteable contributions:</h4>
+            <ul>
+              <li>game state machine</li>
+              <li>checkpoint save/load system</li>
+              <li>fox flame spirit spawning, pooling, and movement</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Endless Sideroller</h3>
+            <ul class="badges">
+              <li class="badge unity">Unity</li>
+              <li class="badge csharp">C#</li>
+              <li class="badge itch"><a href="https://invisible273.itch.io/endless-sideroller"
+                  target="_blank">itch.io</a>
+              </li>
+              <li class="badge jam"><a href="https://itch.io/jam/gmtk-jam-2022/rate/1624309" target="_blank">game
+                  jam</a>
+              </li>
+            </ul>
+            <img src="assets/img/jam/endlesssideroller_cover.jpg" alt="Endless Sideroller - cover" />
+            <p>2D arcade game.</p>
+
+            <h4>Noteable contributions:</h4>
+            <ul>
+              <li>game state machine</li>
+              <li>music and SFX controller</li>
+              <li>dice rolling behavior</li>
+              <li>dice animation controller</li>
+            </ul>
           </div>
         </div>
+      </section>
 
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <div class="row" align="center">
-              <h4 class="adjst"><a href="https://cole-of-oklahoma.itch.io/flight-deck" target="_blank" class="nostyle">Flight Deck</a></h4>
-              <p>Multiplatform flight simulator card game created during a 72-hour <a href="https://ldjam.com/events/ludum-dare/41" target="_blank">game jam</a>. Made with <a href="https://unity3d.com/" target="_blank">Unity</a>.</p>
-              <iframe frameborder="0" src="https://itch.io/embed/249268" width="90%" height="167"></iframe>
+      <section id="school">
+        <h2>School Projects</h2>
+        <p>Here is a list of games I made for assigned projects at the University of Central Oklahoma.</p>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Get Outta My Lair!</h3>
+            <ul class="badges">
+              <li class="badge libGDX">libGDX</li>
+              <li class="badge java">Java</li>
+              <li class="badge coursework">Capstone Course</li>
+            </ul>
+            <div class="carousel" data-carousel>
+              <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+              <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+              <ul data-slides>
+                <li class="carousel-slide-base" data-active>
+                  <img src="assets/img/school/sdd_titlescreen.png" alt="Get Outta My Lair! - title screen" />
+                </li>
+                <li class="carousel-slide">
+                  <img src="assets/img/school/sdd2.png"
+                    alt="Get Outta My Lair! - Bernard the Beholder using his basic laser on an enemy" />
+                </li>
+                <li class="carousel-slide">
+                  <img src="assets/img/school/sdd.png"
+                    alt="Get Outta My Lair! - Bernard the Beholder moving through a level" />
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
+            <p>2D top-down turn-based rpg. <a href="https://github.com/adriankovatana/Get_outta_my_LAIR"
+                target="_blank">GitHub</a>
+            </p>
 
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <div class="row" align="center">
-              <h4 class="adjst"><a href="https://kovakomes.itch.io/falling-through-life" target="_blank" class="nostyle">Falling Through Life</a></h4>
-              <p>WebGL arcade game created during a 52-hour <a href="https://itch.io/jam/jimjam" target="_blank">game jam</a>. Made with <a href="https://unity3d.com/" target="_blank">Unity</a>.</p>
-              <iframe frameborder="0" src="https://itch.io/embed/242912" width="90%" height="167"></iframe>
+            <h4>Noteable contributions:</h4>
+            <ul>
+              <li>game state machine</li>
+              <li>load map/entity data from Tiled map editor</li>
+              <li>grid-based character movement</li>
+              <li>turn-based input system</li>
+              <li>full-screen map and mini-map</li>
+              <li>UI/HUD scripting</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>One Life to Survive</h3>
+            <ul class="badges">
+              <li class="badge libGDX">libGDX</li>
+              <li class="badge java">Java</li>
+              <li class="badge android">Android</li>
+              <li class="badge coursework">Independent Study</li>
+            </ul>
+            <div class="carousel" data-carousel>
+              <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+              <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+              <ul data-slides>
+                <li class="carousel-slide-base" data-active>
+                  <img src="assets/img/school/olts.png"
+                    alt="One Life to Survive - survivor defending against a hoard of approaching zombies" />
+                </li>
+                <li class="carousel-slide">
+                  <img src="assets/img/school/olts_gameover.png"
+                    alt="One Life to Survive - game over screen showing score, time played, kills, and shooting accuracy" />
+                </li>
+              </ul>
             </div>
+            <p>2D zombie survival arcade game. <a href="https://github.com/adriankovatana/One_Life_To_Survive"
+                target="_blank">GitHub</a>
+            </p>
+
+            <h4>Highlights:</h4>
+            <ul>
+              <li>game state machine</li>
+              <li>character movement and rotation</li>
+              <li>character upgrade system</li>
+              <li>enemy spawning and pooling</li>
+              <li>enemy AI movement behavior</li>
+              <li>projectile spawning and pooling</li>
+              <li>projectile collision</li>
+              <li>UI/HUD scripting</li>
+            </ul>
           </div>
+
+          <div class="card">
+            <h3>Siege Defense</h3>
+            <ul class="badges">
+              <li class="badge libGDX">libGDX</li>
+              <li class="badge java">Java</li>
+              <li class="badge android">Android</li>
+              <li class="badge coursework">Mobile Apps Course</li>
+            </ul>
+            <div class="portrait-images">
+              <img src="assets/img/school/siege.png" alt="Siege Defense - siege units attacking the enemy wall" />
+              <img src="assets/img/school/loadout.png"
+                alt="Siege Defense - upgrading siege units and selecting loadout" />
+            </div>
+            <p>2D strategy arcade game. <a href="https://github.com/adriankovatana/Siege_Defense"
+                target="_blank">GitHub</a>
+            </p>
+
+            <h4>Highlights:</h4>
+            <ul>
+              <li>game state machine</li>
+              <li>character animation controllers</li>
+              <li>character AI movement and attack behavior</li>
+              <li>unit upgrade system</li>
+              <li>tower AI targeting and attack behavior</li>
+              <li>projectile collisions</li>
+              <li>UI/HUD scripting</li>
+            </ul>
+          </div>
+
         </div>
+      </section>
 
-			<div class="row">
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>You can contact me through one of the social media accounts listed.</p>
 
-      <h1>School Projects</h1>
-				<div class="col-md-4 col-sm-4">
-					<div class="panel panel-default">
-					<div class="panel-body">
-						<h4 class="adjst">
-							<a href="https://github.com/adriank1/Get_outta_my_LAIR" target="_blank" class="nostyle">
-								Get Outta My Lair!
-							</a>
-						</h4>
-						<p>Multiplatform turn-based rpg written in Java using the <a href="https://libgdx.badlogicgames.com/" target="_blank">libGDX</a> library.</p>
-						<img id="#projectImage" src="assets/img/sdd_titlescreen.png" alt="Get Outta My Lair! - title screen" class="img-responsive" onclick="showImageModal(this)" /><br />
-						<img id="#projectImage" src="assets/img/sdd2.png" alt="Get Outta My Lair! - Bernard the Beholder using his basic laser on an enemy" class="img-responsive" onclick="showImageModal(this)" /><br />
-						<img id="#projectImage" src="assets/img/sdd.png" alt="Get Outta My Lair! - Bernard the Beholder moving through a level" class="img-responsive" onclick="showImageModal(this)" />
-					</div>
-					</div>
-				</div>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/adriankovatana" target="_blank">LinkedIn</a></li>
+          <li><a href="https://twitter.com/AdrianKovatana" target="_blank">Twitter</a></li>
+        </ul>
+      </section>
 
-				<div class="col-md-4 col-sm-4">
-					<div class="panel panel-default">
-					<div class="panel-body">
-						<h4 class="adjst">
-							<a href="https://github.com/adriank1/Siege_Defense" target="_blank" class="nostyle">
-								Siege Defense
-							</a>
-						</h4>
-						<p>Android arcade strategy game written in Java using the <a href="https://libgdx.badlogicgames.com/" target="_blank">libGDX</a> library.</p>
-						<img id="#projectImage" src="assets/img/siege.png" alt="Siege Defense - siege units attacking the enemy wall" class="img-responsive" onclick="showImageModal(this)" />
-					</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-4">
-					<div class="panel panel-default">
-					<div class="panel-body">
-						<h4 class="adjst">
-							<a href="https://github.com/adriank1/One_Life_To_Survive" target="_blank" class="nostyle">
-								One Life to Survive
-							</a>
-						</h4>
-						<p>Android zombie survival arcade game written in Java using the <a href="https://libgdx.badlogicgames.com/" target="_blank">libGDX</a> library.</p>
-						<img id="#projectImage" src="assets/img/olts_title.png" alt="One Life to Survive - title screen" class="img-responsive" onclick="showImageModal(this)" /><br />
-						<img id="#projectImage" src="assets/img/olts.png" alt="One Life to Survive - survivor defending against a hoard of approaching zombies" class="img-responsive" onclick="showImageModal(this)" /><br />
-						<img id="#projectImage" src="assets/img/olts_gameover.png" alt="One Life to Survive - game over screen showing score, time played, kills, and shooting accuracy" class="img-responsive" onclick="showImageModal(this)" />
-					</div>
-					</div>
-				</div>
-
-			</div>
-		</div> <!--End container -->
-	</section>
-
-	<!--END HOME PAGE SECTION-->
-
-  <!-- IMAGE ZOOM MODAL SECTION -->
-  <div id="modalForImageZoom" class="imageModal">
-    <img id="imageModal" class="imageModalContent">
-    <div id="imageModalCaption"></div>
+      <footer>Copyright © <span id="footer-year"></span> Adrian Kovatana. All Rights Reserved.</footer>
+    </main>
   </div>
-
-	<!--FOOTER SECTION -->
-  <br/><br/><br/>
-	<div id="footer">
-    2022 adriankovatana.github.io
-	</div>
-	<!-- END FOOTER SECTION -->
-
-	<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-	<!-- CORE JQUERY  -->
-	<script src="assets/js/jquery-3.1.0.js"></script>
-	<!-- BOOTSTRAP CORE SCRIPT   -->
-	<script src="assets/js/bootstrap.js"></script>
-  <!-- IMAGE ZOOM MODAL -->
-  <script src="assets/js/modal-image.js"></script>
 </body>
+
 </html>
