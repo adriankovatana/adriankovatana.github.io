@@ -23,13 +23,17 @@
 :root,
 :root[data-theme="dark"] {
   --background-color: hsl(0, 0%, 12%);
+  --background-color-alt: hsl(0, 0%, 0%);
   --accent-color: hsl(0, 0%, 25%);
   --text-color: hsl(0, 0%, 100%);
 
-  --link-color: hsl(0, 0%, 70%);
-  --link-color-hover: var(--text-color);
+  --link-color: hsl(241, 100%, 73%);
+  --link-color-hover: hsl(241, 93%, 78%);
 
-  --card-color: hsl(0, 0%, 9%);
+  --header-link-color: hsl(0, 0%, 100%);
+  --header-link-color-hover: hsl(0, 0%, 80%);
+
+  --card-color: hsl(0, 0%, 6%);
 }
 
 
@@ -72,6 +76,10 @@ img {
     Misc
 */
 
+.container {
+  background-color: var(--background-color);
+}
+
 header {
   width: 100%;
   height: var(--header-bar-height);
@@ -85,9 +93,13 @@ header {
   z-index: 999;
 }
 
-main {
+header {
+  --link-color: var(--header-link-color);
+  --link-color-hover: var(--header-link-color-hover);
+}
+
+section {
   padding: 1rem;
-  background-color: var(--background-color);
 }
 
 section:target::before {
@@ -99,6 +111,7 @@ section:target::before {
 
 footer {
   margin-top: calc(100vh - var(--header-bar-height) - 1rem);
+  padding: 1rem;
 }
 
 button#top-nav-toggle-btn {
@@ -117,7 +130,7 @@ nav#top-nav {
   top: var(--header-bar-height);
   padding: 1rem;
 
-  background-color: var(--accent-color);
+  background-color: var(--background-color-alt);
 
   display: flex;
   flex-direction: column;
