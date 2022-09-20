@@ -7,10 +7,8 @@
   --header-bar-height: 3.5rem;
 
   /* Colors */
-  --brand-color-main: hsl(269, 100%, 50%);
-  --brand-color-accent: hsl(62, 100%, 50%);
+  --brand-color: hsl(269, 100%, 50%);
 
-  /* Badges */
   --badge-color-unity: hsl(0, 0%, 0%);
   --badge-color-csharp: hsl(273, 100%, 50%);
   --badge-color-itch: hsl(350, 70%, 51%);
@@ -27,8 +25,9 @@
   --background-color: hsl(0, 0%, 12%);
   --accent-color: hsl(0, 0%, 25%);
   --text-color: hsl(0, 0%, 100%);
-  --text-color-2: hsl(0, 0%, 70%);
-  --shadow-color: var(--accent-color);
+
+  --link-color: hsl(0, 0%, 70%);
+  --link-color-hover: var(--text-color);
 
   --card-color: hsl(0, 0%, 9%);
 }
@@ -42,7 +41,7 @@ html,
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: var(--shadow-color);
+  background-color: var(--accent-color);
   color: var(--text-color);
   margin: 0;
 }
@@ -57,11 +56,11 @@ a,
 a:focus,
 a:active {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--link-color);
 }
 
 a:hover {
-  color: var(--text-color-2);
+  color: var(--link-color-hover);
 }
 
 img {
@@ -76,7 +75,7 @@ img {
 header {
   width: 100%;
   height: var(--header-bar-height);
-  background: var(--brand-color-main);
+  background: var(--brand-color);
 
   display: flex;
   justify-content: space-between;
@@ -170,7 +169,7 @@ nav#top-nav.hidden {
   font-size: 0.75rem;
   line-height: 1.125rem;
   text-transform: uppercase;
-  background-color: var(--brand-color-main);
+  background-color: var(--brand-color);
 }
 
 .unity {
