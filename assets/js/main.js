@@ -40,6 +40,15 @@ buttons.forEach(button => {
   });
 });
 
+// Years of experience
+function SetYearsOfExperience() {
+  const firstDevJobDate = Date.parse("06/01/2015");
+  const yearsOfExperience = Math.floor(new Date(Date.now() - firstDevJobDate) / 1000 / 60 / 60 / 24 / 365);
+
+  document.getElementById("years-of-experience").innerHTML = yearsOfExperience;
+}
+SetYearsOfExperience();
+
 // Footer
 function SetFooterYear() {
   var footerYear = document.getElementById("footer-year");
